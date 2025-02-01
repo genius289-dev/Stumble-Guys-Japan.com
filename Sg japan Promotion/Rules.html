@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sābā Rūru - Server Rules</title>
+    <link rel="stylesheet" href="Rules.css">
+    <style>
+        /* Basic styling for the language selector */
+        #language-selector {
+            margin: 20px;
+            padding: 5px;
+            font-size: 16px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1 id="header-title">Sābā Rūru (Server Rules)</h1>
+        <nav>
+            <!-- <a href="#rules">Rules</a>
+            <a href="#contact">Contact</a>
+            <a href="#home">Home</a> -->
+        </nav>
+        <!-- Language Selector -->
+        <select id="language-selector">
+            <option value="en">English</option>
+            <option value="ja">日本語 (Japanese)</option>
+        </select>
+    </header>
+    <br>
+
+    <!-- Server Rules Section -->
+    <section id="rules">
+        <h2 id="rules-title">Server Guidelines</h2>
+        <br>
+        <p id="rules-description">Minasan ni wa anzen de, kanpeki na keiken wo teikyou shitai to omoimasu! Sore wo tassei suru tame ni, kono ruuru wo yoku yonde, jūbun ni rikai shite kudasai. Minasan no ruuru e no kyōryoku ga, kono komyuniti wo subarashii mono ni shimasu!</p>
+        
+        <h3 id="discord-guidelines">Discord Guidelines and Terms of Service</h3>
+        <p id="discord-description">Discord no Guidelines to Terms of Service ni shitagatte kudasai. Kore wa subete no Discord user ni tekiyō saremasu.</p>
+        
+        <h3 id="terms-title">Terms of Service</h3>
+        <ul id="terms-list">
+            <li>Anata no sābā, shōhin, sābisu nado no sengen wa, sengen no tame no channeru de nai kagiri kinshi desu. Kore ni wa, sengen imeeji, sengen link, sengen tekisuto, mata wa purofīru ya link wo kenshōsaseru yō na kansetsuteki sengen wo fukumimasu. DM de sengen wo okuru koto mo kinshi desu.</li>
+            <li>Spam wa kinshi desu; tekisuto, shashin, emoji nado. Kore wa flooding, rain-posting, mass-pinging, nagai messēji nado wo mo fukumi masu.</li>
+            <li>NSFW ya fusagashii kontentsu wa, imeeji ya tekisuto ni kakawarazu zenmen kinshi desu. Kore wa porno, gō, hadaka, "cursed" imeeji nado wo fukumi, eikyū ban no taishō ni narimasu. NSFW ni kanren suru hanashiai mo onaji kategoria ni hairimasu.</li>
+            <li>Minasan wo sonchō shite kudasai. Shūkyō, sei, gender nado ni kanshite, nikushimi no hatsugen wa ichidomo kyoyō saremasen.</li>
+            <li>@unknown-role staff wo ping suru koto wa kinshi desu, mata yūryō na riyū nashi ni moderētā wo ping suru koto mo kinshi desu. Tazunete ping shita-ri, spam-ping wa kinshi desu.</li>
+            <li>Reido ni sanka, kaishi, soshite puromōto suru koto wa kinshi de, ban no gen'in ni narimasu.</li>
+            <li>Moderētā ya staff no shiji ni shitagatte kudasai. Kare-ra ga dame da to iu koto wa shinaide kudasai.</li>
+            <li>Sābā no subete no channeru de Romaji/Japanese (日本語) dake wo tsukatte kudasai.</li>
+            <li>Akaunto no baibai ya kōkan wo kokoromiru koto wa kinshi desu. Stumble Guys ya hokano gēmu akaunto, mata wa akaunto wa, eikyū ban ni narimasu.</li>
+            <li>AutoMod no kihon rule wo mamotte kudasai: ooki na moji wo amari tsukawanai, fukusū no tekisuto wo tsukawanai, spoiler wo tsukawanai, link wo okuranai, noroi no kotoba ya fukōna kotoba wo tsukawanai de kudasai. Kore ni shitagawanai baai wa AutoMod ni mute saremasu.</li>
+            <li>Staff member no mane wo shinai de kudasai. Kore wa moderētā ya Scopely no kōshiki staff wo mo fukumimasu.</li>
+            <li>Gēmu ya hokano tēma ni kansuru fuhō na jōhō wo hirogenai de kudasai. Kore wa konton ya toraburu no gen'in ni narimasu.</li>
+            <li>Fukusū/second akaunto no shiyō wa kinshi desu. Ban sarete inakute mo, sābā ni wa ichi-ko no akaunto shika tsukatte wa ikemasen.</li>
+            <li>Currency ya item no torihiki, baibai, kōkan wa zenmen kinshi desu. Gēmu de no wager mo onaji desu, eikyū ban no gen'in ni narimasu.</li>
+            <li>Any services ya “free” items wo teikyō shite iru puromōto wa kinshi desu. Kore ga scams de aru ka nai ka ni kakawarazu, ban saremasu.</li>
+            <li>Saishūteki ni, kyōtsū kankaku wo riyō shite kudasai. “Koko ni subete no kinshi koto wo keisai suru koto wa dekinai no de, kyōtsū kankaku ni han suru koto wa shinai de kudasai. Wakarimasen baai wa, moderētā ni tazunete kudasai.”</li>
+        </ul>
+    </section>
+
+    <!-- Footer Section -->
+    <!-- <footer>
+        <p>&copy; 2025 Sābā Rūru - All Rights Reserved</p>
+    </footer> -->
+
+    <script>
+        // Language data
+        const translations = {
+            en: {
+                headerTitle: "Server Rules",
+                rulesTitle: "Server Guidelines",
+                rulesDescription: "We want to provide a safe and perfect experience for everyone! To achieve this, please read and fully understand these rules. Your cooperation with the rules will make this community wonderful!",
+                discordGuidelines: "Discord Guidelines and Terms of Service",
+                discordDescription: "Please follow Discord's Guidelines and Terms of Service. These apply to all Discord users.",
+                termsTitle: "Terms of Service",
+                termsList: [
+                    "Declarations about your server, products, services, etc., are prohibited unless in a designated declaration channel. This includes declaration images, links, text, or indirect declarations such as profiles or links that lead to declarations. Sending declarations via DM is also prohibited.",
+                    "Spam is prohibited; this includes text, images, emojis, etc. This also includes flooding, chain-posting, mass-pinging, long messages, etc.",
+                    "NSFW or obscene content is strictly prohibited, whether in images or text. This includes pornography, gore, nudity, 'cursed' images, etc., and will result in a permanent ban. Discussions related to NSFW topics also fall under this category.",
+                    "Please respect everyone. Hate speech regarding religion, sex, gender, etc., will not be tolerated under any circumstances.",
+                    "Pinging @unknown-role staff is prohibited, as well as pinging moderators without a valid reason. Question pings or spam-pinging is also prohibited.",
+                    "Participating in, initiating, or promoting raids is prohibited and will result in a ban.",
+                    "Please follow the instructions of moderators and staff. Do not do what they say is not allowed.",
+                    "Use only Romaji/Japanese (日本語) in all server channels.",
+                    "Attempting to buy or exchange accounts is prohibited. Stumble Guys or other game accounts will result in a permanent ban.",
+                    "Please follow AutoMod's basic rules: do not use excessive caps, multiple texts, spoilers, links, or offensive language. Failure to comply will result in a mute by AutoMod.",
+                    "Do not impersonate staff members. This includes moderators or official Scopely staff.",
+                    "Do not spread illegal information about games or other topics. This causes confusion and trouble.",
+                    "Using multiple/secondary accounts is prohibited. Even if not banned, only one account is allowed on the server.",
+                    "Trading, selling, or exchanging currency or items is strictly prohibited. Wagering in games is also prohibited and will result in a permanent ban.",
+                    "Promotions offering any services or 'free' items are prohibited. Whether or not these are scams, they will result in a ban.",
+                    "Finally, please use common sense. 'It is impossible to list everything that is prohibited here, so please do not do anything that goes against common sense. If you are unsure, please ask a moderator.'"
+                ]
+            },
+            ja: {
+                headerTitle: "サーバールール",
+                rulesTitle: "サーバーガイドライン",
+                rulesDescription: "皆さんに安全で完璧な体験を提供したいと思います！これを達成するために、このルールをよく読んで十分に理解してください。皆さんのルールへの協力が、このコミュニティを素晴らしいものにします！",
+                discordGuidelines: "Discordガイドラインと利用規約",
+                discordDescription: "Discordのガイドラインと利用規約に従ってください。これらはすべてのDiscordユーザーに適用されます。",
+                termsTitle: "利用規約",
+                termsList: [
+                    "サーバー、商品、サービスなどに関する宣言は、宣言用のチャンネル以外では禁止されています。これには、宣言画像、リンク、テキスト、またはプロフィールやリンクを通じた間接的な宣言も含まれます。DMでの宣言も禁止されています。",
+                    "スパムは禁止されています。これにはテキスト、画像、絵文字などが含まれます。フラッディング、チェーンポスト、マスピング、長いメッセージなども含まれます。",
+                    "NSFWやわいせつなコンテンツは、画像やテキストに関係なく全面禁止です。これにはポルノ、グロ、ヌード、「呪われた」画像などが含まれ、永久追放の対象となります。NSFWに関連する会話もこのカテゴリに含まれます。",
+                    "皆さんを尊重してください。宗教、性別、ジェンダーなどに関するヘイトスピーチは一切許容されません。",
+                    "@unknown-roleスタッフへのピングは禁止されています。また、正当な理由なしにモデレーターをピングすることも禁止されています。質問ピングやスパムピングも禁止されています。",
+                    "レイドへの参加、開始、または宣伝は禁止されており、追放の対象となります。",
+                    "モデレーターやスタッフの指示に従ってください。彼らが許可しないと言ったことはしないでください。",
+                    "サーバーのすべてのチャンネルでローマ字/日本語（日本語）のみを使用してください。",
+                    "アカウントの売買や交換を試みることは禁止されています。Stumble Guysや他のゲームアカウントは永久追放の対象となります。",
+                    "AutoModの基本ルールに従ってください：過度の大文字使用、複数のテキスト、ネタバレ、リンク、攻撃的な言葉を使用しないでください。これに従わない場合、AutoModによってミュートされます。",
+                    "スタッフメンバーを偽装しないでください。これにはモデレーターやScopelyの公式スタッフも含まれます。",
+                    "ゲームやその他のトピックに関する違法な情報を広めないでください。これは混乱やトラブルの原因となります。",
+                    "複数/セカンダリアカウントの使用は禁止されています。追放されていない場合でも、サーバーでは1つのアカウントのみ使用できます。",
+                    "通貨やアイテムの取引、販売、交換は全面禁止です。ゲーム内での賭けも禁止されており、永久追放の対象となります。",
+                    "「無料」アイテムやサービスを提供するプロモーションは禁止されています。これが詐欺であるかどうかに関係なく、追放の対象となります。",
+                    "最後に、常識を使ってください。「ここに禁止されているすべてのことをリストすることは不可能ですので、常識に反することをしないでください。わからない場合は、モデレーターに尋ねてください。」"
+                ]
+            }
+        };
+
+        // Function to update the page content based on the selected language
+        function updateLanguage(lang) {
+            document.getElementById("header-title").textContent = translations[lang].headerTitle;
+            document.getElementById("rules-title").textContent = translations[lang].rulesTitle;
+            document.getElementById("rules-description").textContent = translations[lang].rulesDescription;
+            document.getElementById("discord-guidelines").textContent = translations[lang].discordGuidelines;
+            document.getElementById("discord-description").textContent = translations[lang].discordDescription;
+            document.getElementById("terms-title").textContent = translations[lang].termsTitle;
+
+            const termsList = document.getElementById("terms-list");
+            termsList.innerHTML = ""; // Clear the list
+            translations[lang].termsList.forEach(item => {
+                const li = document.createElement("li");
+                li.textContent = item;
+                termsList.appendChild(li);
+            });
+        }
+
+        // Event listener for the language selector
+        document.getElementById("language-selector").addEventListener("change", function() {
+            const selectedLanguage = this.value;
+            updateLanguage(selectedLanguage);
+        });
+
+        // Set default language to English
+        updateLanguage("en");
+    </script>
+</body>
+</html>

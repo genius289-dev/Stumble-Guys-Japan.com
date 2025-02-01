@@ -1,0 +1,163 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(45deg, #4752c4, #2C2F33, #36393F); /* Initial gradient */
+    background-size: 400% 400%; /* Ensures the gradient covers a large area */
+    animation: gradientBackground 10s ease infinite; /* Animate the background gradient */
+    color: white; /* White text for contrast */
+}
+
+/* Header Styles */
+header {
+    background-color: #4752c4; /* Main color (Discord blue) */
+    color: white;
+    padding: 20px;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    animation: fadeIn 1s ease-in-out;
+}
+
+nav a {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #bbb;
+}
+
+/* Roles Section */
+/* #roles {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 100px 20px 20px;
+    animation: fadeInUp 1.5s ease-out;
+} */
+
+.roles{
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        padding: 10px 20px 20px;
+        animation: fadeInUp 1.5s ease-out;
+}
+
+.role {
+    background-color: #36393F; /* Slightly lighter dark color for cards */
+    border: 1px solid #4752c4; /* Discord blue border */
+    padding: 0px;
+    width: 300px;
+    border-radius: 99px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+    
+}
+
+.role:hover {
+    transform: translateY(-10px); /* Lift effect on hover */
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15); /* Glow effect */
+}
+
+.role h3 {
+    color: #4752c4; /* Blue title */
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #4752c4; /* Discord blue */
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #3b4ab8; /* Darker shade of blue for hover effect */
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+/* Footer Styles */
+footer {
+    background-color: #2C2F33;
+    color: white;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+}
+
+/* Page Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes gradientBackground {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    #roles {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .role {
+        width: 90%;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+}
+
